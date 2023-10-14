@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="simpleintrest.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Interest Calculator</h1>
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="principal">Principal:</label>
+          <input type="number" id="principal" value="" required>
+        </div>
+        <div class="wrapper">
+          <label for="rate">Rate:</label>
+          <input type="number" id="rate" value="" required>
+        </div>
+      </div>
+      <label for="time">Time:</label>
+      <div class="time">
+        <input type="number" id="time" value="" required>
+        <select name="duration" id="duration" required>
+          <option value="" disabled selected>Select an Option</option>
+          <option value="year">Year</option>
+          <option value="month">Month</option>
+        </select>
+      </div>
+      <button id="calculate-btn">Calculate</button>
+      <button id="clear">Clear All</button>
+      <div id="result"></div>
+    </div>
+    <script src="simpleintrest.js"></script>
+  </body>
+</html>
